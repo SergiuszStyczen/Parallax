@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background: url('../img/forest.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color:rgb(245,245,245);
+    overflow: hidden;
+}
+
+.pinetree {
+    width: 1200px;
+    height: 1600px;
+    background: url('../img/Pinetree.png');
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    filter: brightness(50%) contrast(90%) grayscale(90%);
+}
+
+.pinetree2 {
+    width: 1200px;
+    height: 1600px;
+    background: url('../img/Pinetree.png');
+    position: absolute;
+    top: 30%;
+    left: -35%;
+    filter: blur(3px) brightness(40%) contrast(90%) grayscale(90%);
+}
+
+
+header h1 {
+    font-size: 90px;
+    letter-spacing: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h2 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+main {
+    z-index: 10;
+    position: relative;
+}
+
+
+.about {
+    background: url('../img/darkForest.jpg') repeat fixed 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.about_content {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.about_text {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15% 10%;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all .8s ease-in-out;
+}
+
+.about_text h3 {
+    margin-bottom: 10%;
+    width: 100%;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.about_text p {
+    width: 100%;
+}
+
+.about_photo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all .8s ease-in-out;
+}
+
+.about_photo img {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.projects {
+    background: url('../img/walkingForest.jpg') repeat fixed 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.projects_content {
+   display: flex;
+   flex-wrap: wrap; 
+   height: 100vh;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.projects_text{
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all .8s ease-in-out;
+}
+
+.projects_text p {
+    padding-top: 150px;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+
+.projects_examples {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all .8s ease-in-out;
+}
+
+.projects_examples img {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    border: black .5px solid;
+}
+
+.projects_examples a {
+    height: 150px;
+}
+
+.projects_examples img:hover {
+    cursor: pointer;
+}
+
+.firstPage .secondPage {
+    width: 50%;
+}
+
+.thirdPage .fourthPage {
+    width: 50%;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    background: black;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(-2000px);
+}
+
+.social {
+    padding: 20px 0;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.social ul {
+    margin: 60px 0;
+}
+
+.social li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.social a {
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.social a:hover {
+    color: grey;
+    letter-spacing: 2px;
+}
+
+.contact {
+    padding: 20px 0;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.contact li {
+    padding: 10px 0;
+}
+
